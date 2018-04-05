@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back2"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/pppy"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="151dp"
+        android:layout_above="@+id/button_exit"
+        android:layout_alignStart="@+id/button_exit"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/button_select"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/select1"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="151dp"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/exit"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="415dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/button_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/introduce"
+        android:text="" />
+
+</RelativeLayout>

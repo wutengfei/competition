@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+MobSDK {
+    appKey "24fed16600586"
+    appSecret "76c7d2466a00dfc9d883d17139f3d427"
+
+
+    ShareSDK {
+        devInfo {
+            QQ {
+                appId "1106741435"
+                appKey "dhVoiFIr4D0EzPvc"
+            }
+
+        }
+    }
+    SMSSDK{}
+    UMSSDK{
+        gui false;
+    }
+
+}
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.1"
+    //useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.example.five_two"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    //compile 'cn.bmob.android:http-legacy:1.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile 'cn.bmob.android:bmob-sms:1.2.2'
+    compile 'cn.bmob.android:bmob-sdk:3.5.8'
+    compile 'cn.bmob.android:bmob-im:2.0.9'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:23.+'
+    testCompile 'junit:junit:4.12'
+}

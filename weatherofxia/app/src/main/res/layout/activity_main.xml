@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/colorGray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="FOF天气预报"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginRight="8dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/btn_seclect"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bt_collect"/>
+            <!--android:onClick="collect"-->
+
+
+
+    </RelativeLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">/
+    <ListView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/lv_weather"
+         android:layout_weight="1">
+     </ListView>
+    <!--<Button-->
+        <!--android:onClick="getWeather"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="获取天气"-->
+        <!--/>-->
+     </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back3">
+
+
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="336dp"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:textColor="#cccccc"
+         android:lineSpacingExtra="9dp"
+         android:textSize="30sp"
+         android:text="    五六棋是我们团队（@Flourish）从民间收集而来、具有民族代表性的益智棋类游戏。每类棋都带有浓厚的民族气息，各族人民在辛勤劳作的闲暇之余，拾几枚路边的石子，在光滑的石板或者动物的角上刻画出棋盘便可来一场棋局。\n    民间的棋类游戏种类繁多，规则不尽相同，口口相传，一代传一代，一直流传到现在。这种没有几乎从来都没有被记载在书本上，规则也从来没有用白纸黑字写下来过的棋类游戏，我们童年或曾有兴和父辈玩得一二，是过去时代的难得的益智游戏。\n    没有石板、动物角，石子的现代，把流行于民间，靠的是口口相传的民族游戏；如今，我们把它归纳整理，浮现在我们的可以触摸的显示屏上，供于分享、传递。\n    开发团队：Flourish"
+         tools:layout_editor_absoluteX="24dp"
+         tools:layout_editor_absoluteY="2dp"
+         android:layout_below="@+id/textView"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="50dp" />
+
+     <TextView
+         android:id="@+id/textView"
+         android:layout_width="336dp"
+         android:layout_height="wrap_content"
+         android:text="游戏简介"
+         android:textColor="#cccccc"
+         android:textSize="44sp"
+         android:gravity="center"
+         android:layout_alignParentTop="true"
+         android:layout_alignLeft="@+id/textView2"
+         android:layout_alignStart="@+id/textView2"
+         android:layout_marginTop="54dp" />
+ </RelativeLayout>
+</ScrollView>

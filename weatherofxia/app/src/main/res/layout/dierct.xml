@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_cityname"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:textSize="25px"
+        android:hint="可以查县"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:onClick="dquery"
+        android:text="查询"/>
+</LinearLayout>

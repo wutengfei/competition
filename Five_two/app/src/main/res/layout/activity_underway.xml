@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/back4">
+
+
+    <com.example.five_two.FivestarPanel
+        android:id="@+id/id_fivestar"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:id="@+id/more2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/restart" />
+
+    <ToggleButton
+        android:id="@+id/button_son"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/aon"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignBaseline="@+id/button_rules"
+        android:layout_alignBottom="@+id/button_rules"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_rules"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rules"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/more2"
+        android:layout_alignStart="@+id/more2" />
+
+</RelativeLayout>

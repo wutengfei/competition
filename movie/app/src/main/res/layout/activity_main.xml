@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moviewall"
+    tools:context="com.example.administrator.movielogin.MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="223dp"
+        android:layout_toStartOf="@+id/textView"
+        android:text="用户名："
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:text="用户名：" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/loginuser"
+        android:layout_below="@+id/loginuser"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/edit_tb"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginpassword"
+        android:layout_alignBottom="@+id/loginpassword"
+        android:layout_alignEnd="@+id/textView3"
+        android:text="密码："
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/loginuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_tb"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="请输入你的用户名"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="电影转票助手"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="99dp"
+        android:layout_above="@+id/loginuser"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/table_shape"
+        android:text="@string/login_name"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:layout_below="@+id/loginpassword"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginStart="44dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/table_shape"
+        android:text="注册"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:layout_marginStart="49dp"
+        android:layout_alignBaseline="@+id/login"
+        android:layout_alignBottom="@+id/login"
+        android:layout_toEndOf="@+id/login" />
+
+</RelativeLayout>

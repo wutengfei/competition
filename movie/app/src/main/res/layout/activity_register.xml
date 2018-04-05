@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.movielogin.register">
+
+    <EditText
+        android:id="@+id/registerphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_tb"
+        android:ems="10"
+        android:hint="请输入您的联系方式"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/registerpasswordagain"
+        android:layout_alignStart="@+id/registerpasswordagain" />
+
+    <EditText
+        android:id="@+id/registerpasswordagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_tb"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="209dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/registerpassword"
+        android:layout_alignStart="@+id/registerpassword" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号码："
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_alignBaseline="@+id/registerphone"
+        android:layout_alignBottom="@+id/registerphone"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认密码："
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="209dp"
+        android:layout_alignBaseline="@+id/registerpasswordagain"
+        android:layout_alignBottom="@+id/registerpasswordagain"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="29dp"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="116dp"
+        tools:text="用户名："
+        android:layout_alignBaseline="@+id/registeruser"
+        android:layout_alignBottom="@+id/registeruser"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/registerpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_tb"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/registeruser"
+        android:layout_alignStart="@+id/registeruser" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:layout_alignBaseline="@+id/registerpassword"
+        android:layout_alignBottom="@+id/registerpassword"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/registeruser"
+        android:background="@drawable/edit_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入你的用户名"
+        android:inputType="textPersonName"
+        android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteY="116dp"
+        tools:layout_editor_absoluteX="128dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        android:onClick="onClick"
+        android:background="@drawable/table_shape"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="321dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/confirm"
+        android:layout_alignStart="@+id/confirm" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerphone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/table_shape"
+        android:text="确认"
+        android:onClick="onClick"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="321dp" />
+</RelativeLayout>

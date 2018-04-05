@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>苹果园</item>
+        <item>古城</item>
+        <item>八角游乐园</item>
+        <item>八宝山</item>
+        <item>玉泉路</item>
+        <item>五棵松</item>
+        <item>万寿路</item>
+        <item>公主坟</item>
+        <item>军事博物馆</item>
+        <item>木樨地</item>
+        <item>南礼士路</item>
+        <item>复兴门</item>
+        <item>西单</item>
+        <item>天安门西</item>
+        <item>天安门东</item>
+        <item>王府井</item>
+        <item>东单</item>
+        <item>建国门</item>
+        <item>永安里</item>
+        <item>国贸</item>
+        <item>大望路</item>
+        <item>四惠</item>
+        <item>四惠东</item>
+
+
+    </string-array>
+</resources>

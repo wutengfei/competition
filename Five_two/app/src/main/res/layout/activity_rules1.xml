@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back3">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#cccccc"
+            android:lineSpacingExtra="10dp"
+            android:textSize="30sp"
+            android:text="背景介绍：\n    牛角在中国具有悠长的历史，有被制作成中药药材，也有被作为少数民族的乐器使用。西南地区的方言钻牛角尖其实就源自于牛角棋。牛角棋来源于苗家农民长期的生产生活实践，它的构造简单，操作易行。却又是一种赛智力，比毅力而其乐无穷的活动。\n规则：\n    1.白棋先走，每次走一步。\n    2.黑棋后走，每次只能挪动一枚棋子。\n    3.白棋若抢占了黑棋的初始位置白棋则赢。\n    4.黑棋若把白棋逼至牛角位置黑棋则赢。"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="2dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:text="规则简介"
+            android:textColor="#cccccc"
+            android:textSize="44sp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="54dp" />
+    </RelativeLayout>
+</ScrollView>

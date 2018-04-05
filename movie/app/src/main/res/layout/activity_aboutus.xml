@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.movielogin.aboutus"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于我们"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="1.关于电影转票助手\n 电影转票助手是一款简单、便利的网上电影转票应用，并有聊天功能，便于买家和卖家进行协商和交接电影票，免费为广大影迷提供舒心的服务。\n
+2.功能介绍\n
+1）登陆注册 \n用户在安装本软件后，即可为自己申请一个账号，账号包括用户名、密码和联系方式。用户名要求仅有英文和数字组成；密码要求不少于6位，仅由数字和英文字母组成；联系方式要求为11位。通过注册页面注册成功后，通过登陆页面输入正确的用户名和密码，即可登陆并开始使用。\n
+2）查看电影和影院信息 \n用户登录后，即可在电影界面和影院界面分别看到有关上映电影和已有影院的信息。点击电影名后，还可跳转到有关该部电影的互动百科界面。\n
+3）搜索功能 \n用户可在电影界面和影院界面分别通过搜索电影名和影院名来检索所需转票信息.\n
+4）添加出票信息功能 \n点击电影界面的加号按钮，正确完整填写订单的所需信息后，可以添加自己的转票信息。\n
+5) 聊天 \n点击出票信息的聊天按钮后，可以和卖家通过聊天功能进行沟通协商，商量交易细节，同时可以查看和其他用户的聊天信息。\n
+6）个人信息编辑 \n用户登陆后，打开“我的”，在“我的出售”可以关闭交易；在“我的消息”中，可以查看历史联系人；在“修改密码”中可以修改自己的登陆密码。\n
+3.更新 敬请期待\n
+"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        />
+</LinearLayout>

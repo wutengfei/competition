@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.administrator.movielogin.addmovie">
+
+    <!--tools:context="com.andrew.datechoosewheelviewdemo.MainActivity">-->
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加电影信息"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_add"
+        android:layout_marginTop="30dp"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/tv_moviename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:text="电影名:" />
+
+        <EditText
+            android:id="@+id/et_moviename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_moviename"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="请输入电影名"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_cinemaname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="影院名:" />
+
+        <EditText
+            android:id="@+id/et_cinema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:hint="请输入影院名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="价格： " />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:hint="请输入价格" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/tv_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="座位： " />
+
+        <EditText
+            android:id="@+id/et_seat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:hint="请输入座位" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="数量 :  " />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:inputType="number"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:hint="请输入数量" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:text="请选择影片时间："
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/show_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:hint="显示选择的时间" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_date_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="开始时间（有年月日时分的）" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:onClick="onClick"
+        android:background="@drawable/table_shape"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+

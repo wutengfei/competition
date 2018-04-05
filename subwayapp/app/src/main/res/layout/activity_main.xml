@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/picture1_change1"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button_setalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/alarm"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textColor="#7a7d7c"
+        android:text="设定闹钟" />
+</LinearLayout>

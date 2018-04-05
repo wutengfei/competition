@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back3">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#cccccc"
+            android:lineSpacingExtra="10dp"
+            android:textSize="30sp"
+            android:text="背景介绍：\n    东方文明中国的阴阳五行里面，五行相生相克的连线刚好是五角星；在现代，我们则把五角星运用到红旗当中。五角星对中华民族的意义不言而喻。五角星本身就具有一种数学之美。相传三国时期诸葛亮见张飞遇事不爱动脑筋，因此发明五角星棋，教张飞学会细心思考。\n规则：\n    开局为10个棋孔，九枚棋子。若一条线上的三个棋孔，相邻两棋孔有子，另一棋孔无子，远处棋子跨越中间棋子，可取走被跨越的棋子，如此8次跨越棋子，只剩一枚棋子为赢。"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="2dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:text="规则简介"
+            android:textColor="#cccccc"
+            android:textSize="44sp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="54dp" />
+    </RelativeLayout>
+</ScrollView>
